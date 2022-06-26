@@ -1,0 +1,12 @@
+C:\Users\tw925\source\repos\ArduinoDetectionvalve\ArduinoDetectionvalve\bin\Debug\ArduinoDetectionvalve.exe.config
+C:\Users\tw925\source\repos\ArduinoDetectionvalve\ArduinoDetectionvalve\bin\Debug\ArduinoDetectionvalve.exe
+C:\Users\tw925\source\repos\ArduinoDetectionvalve\ArduinoDetectionvalve\bin\Debug\ArduinoDetectionvalve.pdb
+C:\Users\tw925\source\repos\ArduinoDetectionvalve\ArduinoDetectionvalve\bin\Debug\ArduinoDetectionvalve.xml
+C:\Users\tw925\source\repos\ArduinoDetectionvalve\ArduinoDetectionvalve\obj\Debug\ArduinoDetectionvalve.vbproj.AssemblyReference.cache
+C:\Users\tw925\source\repos\ArduinoDetectionvalve\ArduinoDetectionvalve\obj\Debug\ArduinoDetectionvalve.Form1.resources
+C:\Users\tw925\source\repos\ArduinoDetectionvalve\ArduinoDetectionvalve\obj\Debug\ArduinoDetectionvalve.Resources.resources
+C:\Users\tw925\source\repos\ArduinoDetectionvalve\ArduinoDetectionvalve\obj\Debug\ArduinoDetectionvalve.vbproj.GenerateResource.cache
+C:\Users\tw925\source\repos\ArduinoDetectionvalve\ArduinoDetectionvalve\obj\Debug\ArduinoDetectionvalve.vbproj.CoreCompileInputs.cache
+C:\Users\tw925\source\repos\ArduinoDetectionvalve\ArduinoDetectionvalve\obj\Debug\ArduinoDetectionvalve.exe
+C:\Users\tw925\source\repos\ArduinoDetectionvalve\ArduinoDetectionvalve\obj\Debug\ArduinoDetectionvalve.xml
+C:\Users\tw925\source\repos\ArduinoDetectionvalve\ArduinoDetectionvalve\obj\Debug\ArduinoDetectionvalve.pdb
