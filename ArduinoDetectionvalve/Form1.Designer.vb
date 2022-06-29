@@ -32,19 +32,27 @@ Partial Class Form1
         Me.Rest = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label_Baud = New System.Windows.Forms.Label()
         Me.RadioButton_9600 = New System.Windows.Forms.RadioButton()
         Me.GroupBox_Baud1 = New System.Windows.Forms.GroupBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.RadioButton_115200 = New System.Windows.Forms.RadioButton()
         Me.RadioButton_19200 = New System.Windows.Forms.RadioButton()
-        Me.Label_Baud = New System.Windows.Forms.Label()
         Me.TextBox_Baud = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox_Baud2 = New System.Windows.Forms.GroupBox()
+        Me.CheckBox_LOG = New System.Windows.Forms.CheckBox()
+        Me.Button_LOG = New System.Windows.Forms.Button()
+        Me.Label_Log_file = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TextBox_LogFile = New System.Windows.Forms.TextBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.LOG_SETTING_CheckBox = New System.Windows.Forms.CheckBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox_Baud1.SuspendLayout()
         Me.GroupBox_Baud2.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Timer1
@@ -56,7 +64,7 @@ Partial Class Form1
         Me.ComboBox_PORT.BackColor = System.Drawing.Color.White
         Me.ComboBox_PORT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox_PORT.FormattingEnabled = True
-        Me.ComboBox_PORT.Location = New System.Drawing.Point(6, 21)
+        Me.ComboBox_PORT.Location = New System.Drawing.Point(6, 16)
         Me.ComboBox_PORT.Name = "ComboBox_PORT"
         Me.ComboBox_PORT.Size = New System.Drawing.Size(121, 23)
         Me.ComboBox_PORT.TabIndex = 1
@@ -64,7 +72,7 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(128, 18)
+        Me.Button1.Location = New System.Drawing.Point(128, 16)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(88, 23)
         Me.Button1.TabIndex = 2
@@ -74,7 +82,7 @@ Partial Class Form1
         'Timer_LAB
         '
         Me.Timer_LAB.AutoSize = True
-        Me.Timer_LAB.Location = New System.Drawing.Point(6, 46)
+        Me.Timer_LAB.Location = New System.Drawing.Point(6, 41)
         Me.Timer_LAB.Name = "Timer_LAB"
         Me.Timer_LAB.Size = New System.Drawing.Size(74, 15)
         Me.Timer_LAB.TabIndex = 3
@@ -96,7 +104,7 @@ Partial Class Form1
         'Rest
         '
         Me.Rest.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Rest.Location = New System.Drawing.Point(128, 43)
+        Me.Rest.Location = New System.Drawing.Point(128, 41)
         Me.Rest.Name = "Rest"
         Me.Rest.Size = New System.Drawing.Size(88, 23)
         Me.Rest.TabIndex = 5
@@ -107,11 +115,11 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 87)
+        Me.Label2.Location = New System.Drawing.Point(9, 109)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(45, 15)
+        Me.Label2.Size = New System.Drawing.Size(67, 15)
         Me.Label2.TabIndex = 6
-        Me.Label2.Text = "Label2"
+        Me.Label2.Text = "yyyy-MM-dd"
         '
         'GroupBox1
         '
@@ -127,6 +135,16 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 8
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Com Port"
+        '
+        'Label_Baud
+        '
+        Me.Label_Baud.AutoSize = True
+        Me.Label_Baud.Location = New System.Drawing.Point(6, 55)
+        Me.Label_Baud.Name = "Label_Baud"
+        Me.Label_Baud.Size = New System.Drawing.Size(55, 15)
+        Me.Label_Baud.TabIndex = 12
+        Me.Label_Baud.Text = "　　　　"
+        Me.Label_Baud.Visible = False
         '
         'RadioButton_9600
         '
@@ -187,16 +205,6 @@ Partial Class Form1
         Me.RadioButton_19200.Text = "19200"
         Me.RadioButton_19200.UseVisualStyleBackColor = True
         '
-        'Label_Baud
-        '
-        Me.Label_Baud.AutoSize = True
-        Me.Label_Baud.Location = New System.Drawing.Point(6, 60)
-        Me.Label_Baud.Name = "Label_Baud"
-        Me.Label_Baud.Size = New System.Drawing.Size(55, 15)
-        Me.Label_Baud.TabIndex = 12
-        Me.Label_Baud.Text = "　　　　"
-        Me.Label_Baud.Visible = False
-        '
         'TextBox_Baud
         '
         Me.TextBox_Baud.Location = New System.Drawing.Point(6, 13)
@@ -216,7 +224,7 @@ Partial Class Form1
         '
         'Button3
         '
-        Me.Button3.Font = New System.Drawing.Font("新細明體", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button3.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Location = New System.Drawing.Point(183, 13)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(91, 23)
@@ -238,16 +246,99 @@ Partial Class Form1
         Me.GroupBox_Baud2.Text = "Serial communication (Baud)"
         Me.GroupBox_Baud2.Visible = False
         '
+        'CheckBox_LOG
+        '
+        Me.CheckBox_LOG.AutoSize = True
+        Me.CheckBox_LOG.Checked = True
+        Me.CheckBox_LOG.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.CheckBox_LOG.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox_LOG.Location = New System.Drawing.Point(12, 87)
+        Me.CheckBox_LOG.Name = "CheckBox_LOG"
+        Me.CheckBox_LOG.Size = New System.Drawing.Size(96, 19)
+        Me.CheckBox_LOG.TabIndex = 14
+        Me.CheckBox_LOG.Text = "Log analysis"
+        Me.CheckBox_LOG.UseVisualStyleBackColor = True
+        '
+        'Button_LOG
+        '
+        Me.Button_LOG.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button_LOG.ForeColor = System.Drawing.Color.Blue
+        Me.Button_LOG.Location = New System.Drawing.Point(114, 87)
+        Me.Button_LOG.Name = "Button_LOG"
+        Me.Button_LOG.Size = New System.Drawing.Size(114, 23)
+        Me.Button_LOG.TabIndex = 15
+        Me.Button_LOG.Text = "Log setting"
+        Me.Button_LOG.UseVisualStyleBackColor = True
+        '
+        'Label_Log_file
+        '
+        Me.Label_Log_file.AutoSize = True
+        Me.Label_Log_file.Location = New System.Drawing.Point(7, 17)
+        Me.Label_Log_file.Name = "Label_Log_file"
+        Me.Label_Log_file.Size = New System.Drawing.Size(21, 15)
+        Me.Label_Log_file.TabIndex = 16
+        Me.Label_Log_file.Text = "C:/"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.Color.Gray
+        Me.Label1.Location = New System.Drawing.Point(8, 62)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(39, 15)
+        Me.Label1.TabIndex = 17
+        Me.Label1.Text = "File："
+        '
+        'TextBox_LogFile
+        '
+        Me.TextBox_LogFile.BackColor = System.Drawing.SystemColors.Window
+        Me.TextBox_LogFile.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox_LogFile.Enabled = False
+        Me.TextBox_LogFile.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_LogFile.Location = New System.Drawing.Point(53, 60)
+        Me.TextBox_LogFile.Name = "TextBox_LogFile"
+        Me.TextBox_LogFile.Size = New System.Drawing.Size(208, 21)
+        Me.TextBox_LogFile.TabIndex = 18
+        Me.TextBox_LogFile.Text = "Arduino_I2C_log"
+        Me.TextBox_LogFile.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.LOG_SETTING_CheckBox)
+        Me.GroupBox2.Controls.Add(Me.Label_Log_file)
+        Me.GroupBox2.Controls.Add(Me.TextBox_LogFile)
+        Me.GroupBox2.Controls.Add(Me.Label1)
+        Me.GroupBox2.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Location = New System.Drawing.Point(240, 52)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(280, 95)
+        Me.GroupBox2.TabIndex = 19
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Log setting"
+        '
+        'LOG_SETTING_CheckBox
+        '
+        Me.LOG_SETTING_CheckBox.AutoSize = True
+        Me.LOG_SETTING_CheckBox.Location = New System.Drawing.Point(10, 35)
+        Me.LOG_SETTING_CheckBox.Name = "LOG_SETTING_CheckBox"
+        Me.LOG_SETTING_CheckBox.Size = New System.Drawing.Size(89, 19)
+        Me.LOG_SETTING_CheckBox.TabIndex = 19
+        Me.LOG_SETTING_CheckBox.Text = "Change file"
+        Me.LOG_SETTING_CheckBox.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(532, 450)
+        Me.Controls.Add(Me.Button_LOG)
+        Me.Controls.Add(Me.CheckBox_LOG)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.GroupBox_Baud1)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.GroupBox_Baud2)
-        Me.Controls.Add(Me.GroupBox_Baud1)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.GroupBox1.ResumeLayout(False)
@@ -256,6 +347,8 @@ Partial Class Form1
         Me.GroupBox_Baud1.PerformLayout()
         Me.GroupBox_Baud2.ResumeLayout(False)
         Me.GroupBox_Baud2.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -280,4 +373,11 @@ Partial Class Form1
     Friend WithEvents Label3 As Label
     Friend WithEvents GroupBox_Baud2 As GroupBox
     Friend WithEvents TextBox_Baud As TextBox
+    Friend WithEvents CheckBox_LOG As CheckBox
+    Friend WithEvents Button_LOG As Button
+    Friend WithEvents Label_Log_file As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents TextBox_LogFile As TextBox
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents LOG_SETTING_CheckBox As CheckBox
 End Class

@@ -10,3 +10,9 @@ C:\Users\tw925\source\repos\ArduinoDetectionvalve\ArduinoDetectionvalve\obj\Debu
 C:\Users\tw925\source\repos\ArduinoDetectionvalve\ArduinoDetectionvalve\obj\Debug\ArduinoDetectionvalve.exe
 C:\Users\tw925\source\repos\ArduinoDetectionvalve\ArduinoDetectionvalve\obj\Debug\ArduinoDetectionvalve.xml
 C:\Users\tw925\source\repos\ArduinoDetectionvalve\ArduinoDetectionvalve\obj\Debug\ArduinoDetectionvalve.pdb
+C:\Users\tw925\source\repos\ArduinoDetectionvalve\ArduinoDetectionvalve\obj\Debug\ArduinoDetectionvalve.vbproj.SuggestedBindingRedirects.cache
+C:\Users\tw925\source\repos\ArduinoDetectionvalve\ArduinoDetectionvalve\bin\Debug\ArduinoDetectionvalve.exe.manifest
+C:\Users\tw925\source\repos\ArduinoDetectionvalve\ArduinoDetectionvalve\bin\Debug\ArduinoDetectionvalve.application
+C:\Users\tw925\source\repos\ArduinoDetectionvalve\ArduinoDetectionvalve\obj\Debug\ArduinoDetectionvalve.TrustInfo.xml
+C:\Users\tw925\source\repos\ArduinoDetectionvalve\ArduinoDetectionvalve\obj\Debug\ArduinoDetectionvalve.exe.manifest
+C:\Users\tw925\source\repos\ArduinoDetectionvalve\ArduinoDetectionvalve\obj\Debug\ArduinoDetectionvalve.application
