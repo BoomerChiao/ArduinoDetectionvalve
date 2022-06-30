@@ -23,6 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SerialPort1 = New System.IO.Ports.SerialPort(Me.components)
         Me.ComboBox_PORT = New System.Windows.Forms.ComboBox()
@@ -108,7 +109,7 @@ Partial Class Form1
         Me.Rest.Name = "Rest"
         Me.Rest.Size = New System.Drawing.Size(88, 23)
         Me.Rest.TabIndex = 5
-        Me.Rest.Text = "REST"
+        Me.Rest.Text = "Reset"
         Me.Rest.UseVisualStyleBackColor = True
         '
         'Label2
@@ -339,8 +340,11 @@ Partial Class Form1
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.GroupBox_Baud2)
         Me.Controls.Add(Me.GroupBox2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "ArduinoDetectionvalve"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox_Baud1.ResumeLayout(False)

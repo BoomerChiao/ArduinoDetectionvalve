@@ -12,7 +12,7 @@ Public Class Form1
         Log_fileName = TextBox_LogFile.Text
         Log_file = "C:\" + Log_fileName
 
-        Rest_COM_DATA()
+        Reset_COM_DATA()
 
     End Sub
 
@@ -20,7 +20,7 @@ Public Class Form1
         ComboBox_PORT.Text = ""
         ComboBox_PORT.Items.Clear()
 
-        Rest_COM_DATA()
+        Reset_COM_DATA()
 
         If (Button1.Text = "Connect") Then
 
@@ -46,6 +46,25 @@ Public Class Form1
             ComPORT = ComboBox_PORT.SelectedItem
         End If
 
+    End Sub
+    Private Sub ComboBox_PORT_Click(sender As Object, e As EventArgs) Handles ComboBox_PORT.Click
+        ComboBox_PORT.Text = ""
+        ComboBox_PORT.Items.Clear()
+
+        Reset_COM_DATA()
+
+        If (Button1.Text = "Connect") Then
+
+        Else
+            SerialPort1.Close()
+            Button1.ForeColor = Color.Black
+            Button1.Text = "Connect"
+            Timer1.Enabled = False
+            Timer_LAB.ForeColor = Color.Black
+            Timer_LAB.Text = "Timer: OFF"
+            Tool_switch_ON()
+
+        End If
     End Sub
 
 
@@ -84,7 +103,7 @@ Public Class Form1
                 '  MsgBox("Select a COM port first")
                 MsgBox("Select a COM port first", vbExclamation, "Com Prot Error!!!")
                 ComboBox_PORT.Items.Clear()
-                Rest_COM_DATA()
+                Reset_COM_DATA()
 
             End If
         Else
@@ -207,7 +226,7 @@ Public Class Form1
         End Try
     End Function
 
-    Private Sub Rest_COM_DATA()  '用來讀取COM_PORT
+    Private Sub Reset_COM_DATA()  '用來讀取COM_PORT
         ComPORT = ""
         For Each sp As String In My.Computer.Ports.SerialPortNames
             ComboBox_PORT.Items.Add(sp)
@@ -258,6 +277,8 @@ Public Class Form1
         GroupBox_Baud2.Enabled = False
         GroupBox_Baud1.Enabled = False
     End Sub
+
+
 
     Private Sub Tool_switch_ON()
         ComboBox_PORT.Enabled = True
