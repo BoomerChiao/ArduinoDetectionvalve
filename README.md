@@ -3,11 +3,10 @@
 ArduinoDetectionvalve 「Arduino檢測站」
 
 我們可以從過去開發的小型專題看到許多單晶片都具有 Serial 回傳值，藉由 Serial 來蒐集控制器過程所傳回的數值是否出現異常，以便測試專題穩定性的過程中，控制器發生的狀態。
-
 此軟體能更加便捷擷取傳回數據，並完全公開代碼供修改及個人化應用，只要註明出處即可。
 
-隨著科技日新月異，許多小型專題導向 Atmel AVR 系列產品的設計，也有部分採用 Intel P8051 和 Raspberry Pi。
-在成本和能源有限狀況下，低成本、耗電量極低的控制器是重要的考量，因此誕生需多用 Atmel AVR 完成小型專題。
+隨著科技日新月異，許多小型專題從 Intel P8051 導向 Atmel AVR、Raspberry Pi 系列產品設計 。
+在成本和能源有限狀況下，低成本、耗電量極低即擁有可擴展性的控制器是重要的考量，因此誕生需多用 Atmel AVR 完成小型專題。
 ![image](https://user-images.githubusercontent.com/107128781/177026205-3c58b095-8780-4d82-b1c3-d73d6881fcc1.png)
 
 現有的 Arduino Software 本身帶有 Serial 窗口，功能雖齊全，卻無法直接主動記錄到設備記事本裡面，必需藉由人為干涉才能完成此項功能，
