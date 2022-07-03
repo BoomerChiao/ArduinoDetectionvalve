@@ -24,17 +24,24 @@ ArduinoDetectionvalve 「Arduino檢測站」
 ![image](https://user-images.githubusercontent.com/107128781/177026380-bda1e074-94ec-4b2e-92e2-a76037dd6dae.png)
 
 ##  Function Description　（軟體功能解說）
-ArduinoDetection_JPG
-這是由 Visual Studio 2022 編譯而成的軟體，如果沒有要更改內部結構，可以單獨下載 ArduinoDetectionvalve.exe 即可
+![image](https://user-images.githubusercontent.com/107128781/177045486-311091fe-9695-4786-8224-003a6c30cea5.png)
 
-ArduinoDetection_OPEN
-主程式打開後功能分為四大類
-A:Com Port 用來選擇你想要讀取序列埠 (簡：串口)
-B:Serial communication (Baud) 用來調整對應至有效數據訊號調變載波的速率。
-C:Log analysis 用來是否有需要紀錄 日誌檔案 ，可點選 Log setting 修改存儲資料夾。
-D:顯示目前 Com Port 讀取到的值
+⬆⬆⬆這是由 Visual Studio 2022 編譯而成的軟體，如果沒有要更改內部結構，可以單獨下載 ArduinoDetectionvalve.exe 即可
+
+![image](https://user-images.githubusercontent.com/107128781/177045496-ee91198a-1231-4e12-987a-b70e56601eab.png)
+
+⬆⬆⬆主程式打開後功能分為四大類
+
+- A：Com Port 用來選擇你想要讀取序列埠 (簡：串口)
+- B：Serial communication (Baud) 用來調整對應至有效數據訊號調變載波的速率。
+- C：Log analysis 用來是否有需要紀錄 日誌檔案 ，可點選 Log setting 修改存儲資料夾。
+- D：顯示目前 Com Port 讀取到的值
+
+　
 
 ###  Com Port 
-ArduinoDetection_A
-Com Port 功能主要用於探測可用串口，並且可執行連線
+![image](https://user-images.githubusercontent.com/107128781/177045505-ccecf16e-9bfe-4b84-8f03-42e0bd301eeb.png)
+
+⬆⬆⬆Com Port 功能主要用於探測可用串口，並且可執行連線
+
 下方功能ComboBox
