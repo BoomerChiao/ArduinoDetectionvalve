@@ -43,4 +43,5 @@ ArduinoDetectionvalve 「Arduino檢測站」
 
 ⬆⬆⬆Com Port 功能主要用於探測可用串口，並且可執行連線
 
-下方功能ComboBox
+下方功能ComboBox.. ...
+(最近比較忙 沒時間寫 ... ...)
