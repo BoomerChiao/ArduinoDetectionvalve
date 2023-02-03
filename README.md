@@ -43,5 +43,12 @@ ArduinoDetectionvalve 「Arduino檢測站」
 
 ⬆⬆⬆Com Port 功能主要用於探測可用串口，並且可執行連線
 
-下方功能ComboBox.. ...
+ComboBox 功能主要用於自動探測設備中可用串口，並鎖定住 Com Port
+
+Connect Button 用來針對已鎖定住 Com Port，進行連線監測
+
+Reset Button 用於清除 ComboBox 鎖定住 Com Port 情除
+
+
+
 (最近比較忙 沒時間寫 ... ...)
