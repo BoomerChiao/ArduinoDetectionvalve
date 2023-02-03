@@ -28,7 +28,6 @@ ArduinoDetectionvalve 「Arduino檢測站」
 ⬆⬆⬆這是由 Visual Studio 2022 編譯而成的軟體，如果沒有要更改內部結構，可以單獨下載 ArduinoDetectionvalve.exe 即可
 
 ![image](https://user-images.githubusercontent.com/107128781/177045496-ee91198a-1231-4e12-987a-b70e56601eab.png)
-
 ⬆⬆⬆主程式打開後功能分為四大類
 
 - A：Com Port 用來選擇你想要讀取序列埠 (簡：串口)
@@ -40,7 +39,6 @@ ArduinoDetectionvalve 「Arduino檢測站」
 
 ###  Com Port 
 ![image](https://user-images.githubusercontent.com/107128781/177045505-ccecf16e-9bfe-4b84-8f03-42e0bd301eeb.png)
-
 ⬆⬆⬆Com Port 功能主要用於探測可用串口，並且可執行連線
 
 ComboBox 功能主要用於自動探測設備中可用串口，並鎖定住 Com Port
@@ -48,6 +46,13 @@ ComboBox 功能主要用於自動探測設備中可用串口，並鎖定住 Com 
 Connect Button 用來針對已鎖定住 Com Port，進行連線監測
 
 Reset Button 用於清除 ComboBox 鎖定住 Com Port 情除
+
+　　　
+　
+###  Serial communication
+![image](https://user-images.githubusercontent.com/107128781/216546578-08119ce7-f0cf-4dba-80d0-3737a63b4052.png)
+⬆⬆⬆Serial communication　功能主要針對不通波特率(Baud)，主畫面中有設計三個Radio Button 分別為 9600、19200、115200 三種大眾類型波特率(Baud)，點擊 Other baud 按鈕，可且換成手動輸入波特率(Baud)，提供個人化選擇需求
+
 
 
 
