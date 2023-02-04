@@ -56,7 +56,12 @@ Reset Button 用於清除 ComboBox 鎖定住 Com Port 情除
 
 ⬆⬆⬆Serial communication　功能主要針對不通波特率(Baud)，主畫面中有設計三個Radio Button 分別為 9600、19200、115200 三種大眾類型波特率(Baud)，點擊 Other baud 按鈕，可且換成手動輸入波特率(Baud)，提供個人化選擇需求
 
+　　
+　
+###  Log analysis
+![image](https://user-images.githubusercontent.com/107128781/216630248-a1091552-3254-4a5a-8912-b3c6c79c77c8.png)
 
+⬆⬆⬆Log analysis　功能主要進行存儲監控　Com Port　
 
 
 (最近比較忙 沒時間寫 ... ...)
