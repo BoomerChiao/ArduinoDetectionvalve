@@ -25,43 +25,56 @@ ArduinoDetectionvalve 「Arduino檢測站」
 ##  Function Description　（軟體功能解說）
 ![image](https://user-images.githubusercontent.com/107128781/177045486-311091fe-9695-4786-8224-003a6c30cea5.png)
 
-⬆⬆⬆這是由 Visual Studio 2022 編譯而成的軟體，如果沒有要更改內部結構，可以單獨下載 ArduinoDetectionvalve.exe 即可
+⬆⬆⬆這是由 Visual Studio 2022 編譯而成的軟體，如果沒有要更改內部結構，可以單獨下載 ArduinoDetectionvalve.exe 即可。
 
 ![image](https://user-images.githubusercontent.com/107128781/177045496-ee91198a-1231-4e12-987a-b70e56601eab.png)
 
-⬆⬆⬆主程式打開後功能分為四大類
+⬆⬆⬆主程式打開後功能分為四大類。
 
-- A：Com Port 用來選擇你想要讀取序列埠 (簡：串口)
+- A：Com Port 用來選擇你想要讀取序列埠 (簡：串口)。
 - B：Serial communication (Baud) 用來調整對應至有效數據訊號調變載波的速率。
 - C：Log analysis 用來是否有需要紀錄 日誌檔案 ，可點選 Log setting 修改存儲資料夾。
-- D：顯示目前 Com Port 讀取到的值
+- D：顯示目前 Com Port 讀取到的值。
 
 　
 
 ###  Com Port 
 ![image](https://user-images.githubusercontent.com/107128781/177045505-ccecf16e-9bfe-4b84-8f03-42e0bd301eeb.png)
 
-⬆⬆⬆Com Port 功能主要用於探測可用串口，並且可執行連線
+⬆⬆⬆Com Port 功能主要用於探測可用串口，並且可執行連線。
 
-ComboBox 功能主要用於自動探測設備中可用串口，並鎖定住 Com Port
+ComboBox 功能主要用於自動探測設備中可用串口，並鎖定住 Com Port。
 
-Connect Button 用來針對已鎖定住 Com Port，進行連線監測
+Connect Button 用來針對已鎖定住 Com Port，進行連線監測。
 
-Reset Button 用於清除 ComboBox 鎖定住 Com Port 情除
-
-　　　
-　
-###  Serial communication
-![image](https://user-images.githubusercontent.com/107128781/216546578-08119ce7-f0cf-4dba-80d0-3737a63b4052.png)
-
-⬆⬆⬆Serial communication　功能主要針對不通波特率(Baud)，主畫面中有設計三個Radio Button 分別為 9600、19200、115200 三種大眾類型波特率(Baud)，點擊 Other baud 按鈕，可且換成手動輸入波特率(Baud)，提供個人化選擇需求
+Reset Button 用於清除 ComboBox 鎖定住 Com Port 情除。
 
 　　
 　
+###  Log box
+![image](https://user-images.githubusercontent.com/107128781/216778315-6fc2dafc-cfa7-4100-8b13-c47ee606c10a.png)
+
+⬆⬆⬆Log box 其功能主要閱讀已鎖定 Com Port ，監測到訊息加以顯示欄位。
+
+　　
+  
+  
+
 ###  Log analysis
 ![image](https://user-images.githubusercontent.com/107128781/216630248-a1091552-3254-4a5a-8912-b3c6c79c77c8.png)
 
-⬆⬆⬆Log analysis　功能主要進行存儲監控　Com Port　
+⬆⬆⬆Log analysis　功能主要進行存儲監控中　Com Port　，需透過 CheckBox 勾選是否要記錄，藉由 Log setting Button 可查閱資料儲存位置。   (預設 C:/Arduino_I2C_log)
+
+CheckBox 功能主要針對是否存取 Log ，勾選代表存取；未勾選代表不存取。
+
+Log setting Button 功能主要查閱資料儲存地點。
+
+　　
+  　
+###  Log setting
+![image](https://user-images.githubusercontent.com/107128781/216777389-27af7858-2ed7-4945-865b-bc49a59c499c.png)
+
+⬆⬆⬆Log setting 透過點擊　Log setting Button 進入，其內部主要閱讀資料存取位置，也能透過勾選　Change file ，更改存取資料夾名稱。
 
 
-(最近比較忙 沒時間寫 ... ...)
+
