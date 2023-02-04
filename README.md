@@ -27,6 +27,9 @@ ArduinoDetectionvalve 「Arduino檢測站」
 
 ⬆⬆⬆這是由 Visual Studio 2022 編譯而成的軟體，如果沒有要更改內部結構，可以單獨下載 ArduinoDetectionvalve.exe 即可。
 
+　　
+  
+
 ![image](https://user-images.githubusercontent.com/107128781/177045496-ee91198a-1231-4e12-987a-b70e56601eab.png)
 
 ⬆⬆⬆主程式打開後功能分為四大類。
@@ -36,7 +39,7 @@ ArduinoDetectionvalve 「Arduino檢測站」
 - C：Log analysis 用來是否有需要紀錄 日誌檔案 ，可點選 Log setting 修改存儲資料夾。
 - D：顯示目前 Com Port 讀取到的值。
 
-　
+　　
 
 ###  Com Port 
 ![image](https://user-images.githubusercontent.com/107128781/177045505-ccecf16e-9bfe-4b84-8f03-42e0bd301eeb.png)
